@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>flex - grid</title>
+</head>
+<body>
+    
+    <div class="m-10 bg-green-100 p-5">
+
+            <!-- flexbox from here -->
+
+        <h1 class="text-center p-10 text-green-500 bg-white">flexbox</h1>
+
+        <div class="p-5 flex">
+            <div class="bg-red-50 flex-1 text-center p-3 m-5">flex-1</div>
+            <div class="bg-red-50 text-center p-3 m-5">2</div>
+            <div class="bg-red-50 flex-1 text-center p-3 m-5">flex-1</div>
+        </div>
+
+        <div class="p-5 flex-col">
+            <div class="bg-red-50 text-center p-3  m-5">flex-col</div>
+            <div class="bg-red-50 text-center p-3  m-5">2</div>
+            <div class="bg-red-50 text-center p-3  m-5">3</div>
+        </div>
+
+        <div class="p-5 flex-col">
+            <div class="bg-red-50 text-center p-3  m-5">flex-col</div>
+            <div class="bg-red-50 text-center p-3  m-5">2</div>
+            <div class="bg-red-50 text-center p-3  m-5">3</div>
+        </div>
+
+        <div class="p-2 m-auto flex w-1/2 bg-green-500">
+            <div class="bg-red-50 text-center p-3  m-5 flex-auto">flex-col</div>
+            <div class="bg-red-50 text-center p-3  m-5 flex-auto">2</div>
+            <div class="bg-red-50 text-center p-3  m-5 flex-auto">3</div>
+        </div>
+
+            <!-- grids from here -->
+
+        <h1 class="text-center p-10 text-green-500 bg-white mt-10 mb-10">Grid</h1>
+
+        <div class="grid grid-cols-2 gap-x-5 gap-y-1  mt-10 mb-10">
+            <div class="bg-blue-100 p-2 text-center">grid</div>
+            <div class="bg-blue-100 p-2 text-center">col</div>
+            <div class="bg-blue-100 p-2 text-center">with</div>
+            <div class="bg-blue-100 p-2 text-center">2 col</div>
+            <div class="bg-blue-100 p-2 text-center">per row</div>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5  mt-10 mb-10">
+            <div class="bg-blue-100 p-2 text-center">grid</div>
+            <div class="bg-blue-100 p-2 text-center">col</div>
+            <div class="bg-blue-100 p-2 text-center">with</div>
+            <div class="bg-blue-100 p-2 text-center col-span-2">2 col</div>
+            <div class="bg-blue-100 p-2 text-center">per row</div>
+            <div class="bg-blue-100 p-2 text-center">*</div>
+            <div class="bg-blue-100 p-2 text-center">*</div>
+            <div class="bg-blue-100 p-2 text-center">*</div>
+            <div class="bg-blue-100 p-2 text-center">*</div>
+        </div>
+
+        <div class="grid grid-cols-6 gap-x-5 gap-y-5  mt-10 mb-10 p-5 bg-white">
+            <div class="bg-blue-100 p-2 text-center col-span-4 col-start-2">grid-span</div>
+            <div class="bg-blue-100 p-2 text-center col-start-2">*</div>
+            <div class="bg-blue-100 p-2 text-center col-start-5">*</div>
+            <div class="bg-blue-100 p-2 text-center col-span-2 col-start-1">grid-start</div>
+            <div class="bg-blue-100 p-2 text-center col-span-2 col-start-5">grid-end</div>
+            <div class="bg-blue-100 p-2 text-center col-start-2">*</div>
+            <div class="bg-blue-100 p-2 text-center col-start-5">*</div>
+            <div class="bg-blue-100 p-2 text-center col-span-2 col-start-2">column manipulation</div>
+            <div class="bg-blue-100 p-2 text-center col-span-2">using just 3 class/properties</div>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
